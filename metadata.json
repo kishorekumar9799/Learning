@@ -1,0 +1,6 @@
+{
+  "name": "Institute of Higher Learning",
+  "description": "A prestigious portal and management system for the Institute of Higher Learning, featuring a full-stack student admission manager, department listings, placement highlights, and beautiful parallax scrolling with responsive motion animations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

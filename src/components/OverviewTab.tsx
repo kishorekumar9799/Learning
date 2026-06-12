@@ -49,14 +49,14 @@ export default function OverviewTab() {
       title: 'Uncompromising Rigor',
       description: 'Our curriculum is structured to expand problem-solving frameworks, ensuring graduates understand deep fundamental math and systems.',
       icon: ShieldCheck,
-      color: 'border-l-4 border-[#0b3b2c] bg-[#0b3b2c]/5 dark:bg-[#0b3b2c]/10'
+      color: 'border-l-4 border-[#0a2540] bg-[#0a2540]/5 dark:bg-[#0a2540]/10'
     },
     {
       id: 'i2',
       title: 'Innovative Labs',
       description: 'Scholars work on live, funded experiments backed by leading tech enterprises, spanning distributed compiler networks to structural automation.',
       icon: Microscope,
-      color: 'border-l-4 border-emerald-700 bg-emerald-50/20 dark:bg-emerald-900/10'
+      color: 'border-l-4 border-blue-700 bg-blue-50/20 dark:bg-blue-900/10'
     },
     {
       id: 'i3',
@@ -77,13 +77,13 @@ export default function OverviewTab() {
           transition={{ duration: 0.6 }}
           className="lg:col-span-7 space-y-5"
         >
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-55/40 dark:bg-emerald-950/30 text-xs font-semibold uppercase tracking-wider text-[#0b3b2c] dark:text-emerald-450">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50/75 dark:bg-blue-950/30 text-xs font-semibold uppercase tracking-wider text-[#0a2540] dark:text-sky-400">
             <Landmark className="w-3.5 h-3.5" />
             <span>Legacy & Values</span>
           </div>
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-slate-900 dark:text-white tracking-tight leading-tight">
             A Tradition of Innovation <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0b3b2c] to-[#b45309] dark:from-emerald-400 dark:to-amber-300">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0a2540] to-[#b45309] dark:from-sky-400 dark:to-amber-305">
               Steeped in Scientific Discovery
             </span>
           </h2>
@@ -101,8 +101,8 @@ export default function OverviewTab() {
           transition={{ duration: 0.6 }}
           className="lg:col-span-5 relative"
         >
-          <div className="absolute -inset-2 bg-gradient-to-tr from-amber-400/20 to-emerald-400/20 rounded-2xl blur-lg opacity-85 -z-10" />
-          <div className="overflow-hidden rounded-2xl border border-[#0b3b2c]/10 dark:border-emerald-800/25 shadow-xl">
+          <div className="absolute -inset-2 bg-gradient-to-tr from-amber-400/20 to-blue-400/20 rounded-2xl blur-lg opacity-85 -z-10" />
+          <div className="overflow-hidden rounded-2xl border border-[#0a2540]/10 dark:border-blue-800/25 shadow-xl">
             <img 
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZTVYt1Ck-yWlQWpusGTQMuZO4v1OKC3R1btmumGSf7iKxfn5alO_FiUOEEpuZvcseF99tWdlZ0Dho7H5V6Fjwmw_qeSk6Vrwm1SYfNeCeLNz9iwS-Uop0xUe3MPTlpEkL3rs7MlkgYKO7kpxaaUJTtqCGghF83_s983rMlphVnKEGGeNj2R-5ym7DaiPnDuSCwcFDyE2QZ5FYnUQKxtiCFgNMx6gFWEBhg78KsLYGD2rAv20-ASpu4RLvqeE0ipknMNW5NAHI1cUU" 
               alt="Campus Quadrangle" 
@@ -122,9 +122,9 @@ export default function OverviewTab() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className={`p-6 rounded-xl border border-dashed border-[#0b3b2c]/10 dark:border-emerald-800/15 shadow-xs hover:shadow-md transition-all ${item.color}`}
+              className={`p-6 rounded-xl border border-dashed border-[#0a2540]/10 dark:border-blue-800/15 shadow-xs hover:shadow-md transition-all ${item.color}`}
             >
-              <div className="p-2.5 w-fit rounded-lg bg-white dark:bg-[#02130e] shadow-xs mb-4 text-[#0b3b2c] dark:text-emerald-400">
+              <div className="p-2.5 w-fit rounded-lg bg-white dark:bg-[#070d19] shadow-xs mb-4 text-[#0a2540] dark:text-sky-400">
                 <Icon className="w-5 h-5" />
               </div>
               <h3 className="text-lg font-bold text-slate-800 dark:text-white mb-2 font-serif">{item.title}</h3>
@@ -140,7 +140,7 @@ export default function OverviewTab() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.7 }}
-        className="bg-[#031d16] text-[#eaf5f1] rounded-2xl p-8 md:p-12 border border-emerald-900/35 relative overflow-hidden"
+        className="bg-[#05152c] text-[#f1f5f9] rounded-2xl p-8 md:p-12 border border-blue-950/35 relative overflow-hidden"
       >
         <div className="absolute top-0 right-0 p-8 opacity-5 pointer-events-none text-9xl font-serif">
           ”
@@ -154,10 +154,10 @@ export default function OverviewTab() {
             />
           </div>
           <div className="space-y-4">
-            <blockquote className="font-serif italic text-lg md:text-xl text-emerald-50/90 leading-relaxed tracking-wide">
+            <blockquote className="font-serif italic text-lg md:text-xl text-sky-100/90 leading-relaxed tracking-wide">
               "Our mission is not merely to compile or transfer modern information. It is to cultivate the spark of curiosity, validate wisdom, and equip our engineers with values required to navigate and design an ethical global ecosystem."
             </blockquote>
-            <div className="border-t border-emerald-800/20 pt-3 flex flex-col md:flex-row md:items-center justify-between gap-2">
+            <div className="border-t border-blue-800/20 pt-3 flex flex-col md:flex-row md:items-center justify-between gap-2">
               <div>
                 <cite className="not-italic font-bold text-amber-400 tracking-wide">Dr. Eleanor Vance</cite>
                 <span className="text-xs text-slate-400 block font-mono">President & Institutional Principal</span>
@@ -191,17 +191,17 @@ export default function OverviewTab() {
                 <button
                   key={evt.year}
                   onClick={() => setActiveTimelineIdx(idx)}
-                  className={`p-4 rounded-xl text-left border transition-all duration-300 relative bg-[#fdfcfb] dark:bg-[#031d16]/40 cursor-pointer ${
+                  className={`p-4 rounded-xl text-left border transition-all duration-300 relative bg-[#fdfcfb] dark:bg-[#070d19]/40 cursor-pointer ${
                     isActive 
-                      ? 'border-[#0b3b2c] shadow-md shadow-emerald-950/5 dark:shadow-none dark:border-emerald-400 scale-102 font-bold' 
-                      : 'border-[#0b3b2c]/10 dark:border-emerald-850/30 hover:border-[#0b3b2c]/15 dark:hover:border-emerald-800/10'
+                      ? 'border-[#0a2540] shadow-md shadow-blue-950/5 dark:shadow-none dark:border-sky-400 scale-102 font-bold' 
+                      : 'border-[#0a2540]/10 dark:border-blue-900/30 hover:border-[#0a2540]/15 dark:hover:border-blue-800/10'
                   }`}
                 >
                   <div className="flex items-center justify-between mb-2">
-                    <span className={`font-mono font-bold text-base md:text-lg ${isActive ? 'text-[#0b3b2c] dark:text-emerald-400' : 'text-slate-400'}`}>
+                    <span className={`font-mono font-bold text-base md:text-lg ${isActive ? 'text-[#0a2540] dark:text-sky-400' : 'text-slate-400'}`}>
                       {evt.year}
                     </span>
-                    <div className={`p-1.5 rounded-md ${isActive ? 'bg-emerald-50 text-[#0b3b2c] dark:bg-emerald-950/50 dark:text-emerald-450' : 'bg-slate-100 text-slate-400 dark:bg-slate-800/50'}`}>
+                    <div className={`p-1.5 rounded-md ${isActive ? 'bg-blue-50 text-[#0a2540] dark:bg-blue-950/50 dark:text-sky-450' : 'bg-slate-100 text-slate-400 dark:bg-slate-800/50'}`}>
                       <Icon className="w-4 h-4" />
                     </div>
                   </div>
@@ -220,10 +220,10 @@ export default function OverviewTab() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
-          className="p-6 md:p-8 rounded-xl border border-dashed border-[#0b3b2c]/20 dark:border-emerald-800/30 bg-emerald-50/10 dark:bg-[#02130e]/30 flex flex-col md:flex-row items-center justify-between gap-6"
+          className="p-6 md:p-8 rounded-xl border border-dashed border-[#0a2540]/20 dark:border-blue-800/30 bg-blue-50/5 dark:bg-[#070d19]/30 flex flex-col md:flex-row items-center justify-between gap-6"
         >
           <div className="space-y-2 max-w-2xl">
-            <span className="font-mono text-xs font-bold uppercase py-0.5 px-2 rounded-full bg-emerald-100/50 dark:bg-emerald-950/40 text-[#0b3b2c] dark:text-emerald-400">
+            <span className="font-mono text-xs font-bold uppercase py-0.5 px-2 rounded-full bg-blue-100/50 dark:bg-blue-950/40 text-[#0a2540] dark:text-sky-400">
               Breakthrough Highlight Year {timelineEvents[activeTimelineIdx].year}
             </span>
             <h4 className="font-serif text-xl font-bold text-slate-800 dark:text-white">
@@ -233,7 +233,7 @@ export default function OverviewTab() {
               {timelineEvents[activeTimelineIdx].desc}
             </p>
           </div>
-          <div className="shrink-0 flex items-center justify-center w-16 h-16 rounded-full bg-[#0b3b2c]/10 dark:bg-[#0b3b2c]/30 text-[#0b3b2c] dark:text-emerald-300 shadow-inner">
+          <div className="shrink-0 flex items-center justify-center w-16 h-16 rounded-full bg-[#0a2540]/10 dark:bg-[#0a2540]/30 text-[#0a2540] dark:text-sky-305 shadow-inner">
             <Milestone className="w-7 h-7" />
           </div>
         </motion.div>

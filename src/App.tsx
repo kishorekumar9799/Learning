@@ -123,7 +123,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-slate-50 text-slate-800 selection:bg-[#002045] selection:text-white transition-all duration-300">
+    <div className="min-h-screen flex flex-col bg-[#f4f7fa] text-[#132a4a] dark:bg-[#070d19] dark:text-[#f1f5f9] selection:bg-[#0a2540] selection:text-white transition-all duration-300">
       
       {/* Dynamic top brand bar navigator */}
       <Navigation 
@@ -161,7 +161,7 @@ export default function App() {
           {/* Global Loading / Error Interceptors */}
           {isLoading ? (
             <div className="p-24 text-center space-y-4">
-              <Loader2 className="w-8 h-8 text-indigo-600 animate-spin mx-auto" />
+              <Loader2 className="w-8 h-8 text-[#0a2540] dark:text-sky-401 animate-spin mx-auto" />
               <span className="block text-xs font-mono text-slate-500 font-bold uppercase tracking-wider animate-pulse">
                 Syncing University Records Feed...
               </span>
@@ -197,7 +197,7 @@ export default function App() {
       </main>
 
       {/* Elegant Standard Institutional Footer */}
-      <footer className="bg-[#002045] text-white border-t border-slate-850">
+      <footer className="bg-[#0a2540] text-white border-t border-slate-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid grid-cols-1 md:grid-cols-4 gap-10">
           
           <div className="space-y-4 col-span-1 md:col-span-2">
@@ -252,7 +252,7 @@ export default function App() {
       {showScrollTop && (
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="fixed bottom-6 right-6 p-3 bg-indigo-650 hover:bg-slate-900 border border-indigo-700 text-white rounded-full shadow-xl shadow-slate-950/20 hover:shadow-indigo-500/20 transition-all cursor-pointer z-50 hover:-translate-y-1"
+          className="fixed bottom-6 right-6 p-3 bg-[#0a2540] hover:bg-slate-900 border border-blue-900/40 text-white rounded-full shadow-xl shadow-slate-950/20 hover:shadow-blue-500/20 transition-all cursor-pointer z-50 hover:-translate-y-1"
           title="Scroll to top"
         >
           <ArrowUp className="w-4 h-4" />

@@ -55,7 +55,7 @@ export default function PlacementsTab({ placements, programs }: PlacementsTabPro
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         
         {/* Highest Salary annual package card */}
-        <div className="p-6 rounded-2xl bg-[#031d16] text-[#eaf5f1] border border-emerald-950/45 shadow-lg relative overflow-hidden flex flex-col justify-between h-44 select-none">
+        <div className="p-6 rounded-2xl bg-[#06152d] text-[#f1f5f9] border border-blue-950/45 shadow-lg relative overflow-hidden flex flex-col justify-between h-44 select-none">
           <div className="absolute top-0 right-0 p-4 opacity-5 text-8xl font-mono">
             $
           </div>
@@ -74,9 +74,9 @@ export default function PlacementsTab({ placements, programs }: PlacementsTabPro
         </div>
 
         {/* average package salary parameters card */}
-        <div className="p-6 rounded-2xl bg-[#fdfcfb] dark:bg-[#031a14] border border-[#0b3b2c]/10 dark:border-emerald-800/15 shadow-md flex flex-col justify-between h-44 select-none">
+        <div className="p-6 rounded-2xl bg-[#fdfcfb] dark:bg-[#0a1220]/75 border border-[#0a2540]/10 dark:border-blue-900/15 shadow-md flex flex-col justify-between h-44 select-none">
           <div className="space-y-1">
-            <span className="font-mono text-[10px] tracking-wider uppercase text-[#0b3b2c] dark:text-emerald-400 font-bold flex items-center gap-1">
+            <span className="font-mono text-[10px] tracking-wider uppercase text-[#0a2540] dark:text-sky-400 font-bold flex items-center gap-1">
               <Briefcase className="w-3.5 h-3.5" />
               <span>Average Cohort Career Salary</span>
             </span>
@@ -90,9 +90,9 @@ export default function PlacementsTab({ placements, programs }: PlacementsTabPro
         </div>
 
         {/* Verified on-boarding certificate stamp */}
-        <div className="p-6 rounded-2xl bg-[#fdfcfb] dark:bg-[#031a14] border border-[#0b3b2c]/10 dark:border-emerald-800/15 shadow-md flex flex-col justify-between h-44 select-none">
+        <div className="p-6 rounded-2xl bg-[#fdfcfb] dark:bg-[#0a1220]/75 border border-[#0a2540]/10 dark:border-blue-900/15 shadow-md flex flex-col justify-between h-44 select-none">
           <div className="space-y-1">
-            <span className="font-mono text-[10px] tracking-wider uppercase text-emerald-700 dark:text-emerald-400 font-bold flex items-center gap-1">
+            <span className="font-mono text-[10px] tracking-wider uppercase text-blue-700 dark:text-sky-400 font-bold flex items-center gap-1">
               <CheckCircle2 className="w-3.5 h-3.5" />
               <span>Placement Assurance Rate</span>
             </span>
@@ -108,7 +108,7 @@ export default function PlacementsTab({ placements, programs }: PlacementsTabPro
       </div>
 
       {/* High-End Bespoke SVG Stream salary comparison charts */}
-      <div className="bg-[#fdfcfb] dark:bg-[#031a14] border border-[#0b3b2c]/10 dark:border-emerald-800/15 rounded-2xl p-6 shadow-sm space-y-6">
+      <div className="bg-[#fdfcfb] dark:bg-[#0a1220]/75 border border-[#0a2540]/10 dark:border-blue-900/15 rounded-2xl p-6 shadow-sm space-y-6">
         <div className="space-y-1">
           <h3 className="font-serif text-lg font-bold text-slate-900 dark:text-white">Active Compensation Benchmarking by Stream</h3>
           <p className="text-xs text-slate-500 font-mono">Illustrates average annual base package metrics processed in current fiscal term</p>
@@ -130,7 +130,7 @@ export default function PlacementsTab({ placements, programs }: PlacementsTabPro
                     animate={{ width: `${percentage}%` }}
                     transition={{ duration: 0.8, delay: i * 0.1 }}
                     className={`h-full rounded-full ${
-                      i === 0 ? 'bg-[#0b3b2c]' : i === 1 ? 'bg-emerald-600' : i === 2 ? 'bg-[#b45309]' : 'bg-orange-55/90'
+                      i === 0 ? 'bg-[#0a2540]' : i === 1 ? 'bg-blue-600' : i === 2 ? 'bg-[#b45309]' : 'bg-orange-55/90'
                     }`}
                   />
                 </div>
@@ -147,7 +147,7 @@ export default function PlacementsTab({ placements, programs }: PlacementsTabPro
           {recruiterPartners.map((item) => (
             <div 
               key={item.name}
-              className="p-4 bg-[#fdfcfb] dark:bg-[#031a14] border border-[#0b3b2c]/10 dark:border-emerald-800/20 rounded-xl text-center flex flex-col justify-center items-center gap-3 shadow-xs"
+              className="p-4 bg-[#fdfcfb] dark:bg-[#0a1220]/75 border border-[#0a2540]/10 dark:border-blue-900/20 rounded-xl text-center flex flex-col justify-center items-center gap-3 shadow-xs"
             >
               <div className={`w-12 h-12 ${item.color} rounded-xl font-bold font-mono text-base flex items-center justify-center shadow-inner`}>
                 {item.logoText}
@@ -178,7 +178,7 @@ export default function PlacementsTab({ placements, programs }: PlacementsTabPro
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Search scholar or partner..."
-                className="w-full sm:w-64 pl-9 pr-3 py-2 bg-[#fdfcfb] dark:bg-[#031d16] border border-[#0b3b2c]/10 dark:border-[#02130e] rounded-xl text-xs text-slate-800 dark:text-white focus:outline-none focus:border-emerald-500 focus:ring-0"
+                className="w-full sm:w-64 pl-9 pr-3 py-2 bg-[#fdfcfb] dark:bg-[#070d19] border border-[#0a2540]/10 dark:border-[#070d19] rounded-xl text-xs text-slate-800 dark:text-white focus:outline-none focus:border-blue-500 focus:ring-0"
               />
             </div>
 
@@ -188,7 +188,7 @@ export default function PlacementsTab({ placements, programs }: PlacementsTabPro
               <select
                 value={sectorFilter}
                 onChange={(e) => setSectorFilter(e.target.value)}
-                className="p-2 border border-[#0b3b2c]/10 dark:border-[#02130e] bg-[#fdfcfb] dark:bg-[#031d16] rounded-xl text-xs text-slate-700 dark:text-slate-350 focus:outline-none focus:border-emerald-500"
+                className="p-2 border border-[#0a2540]/10 dark:border-[#070d19] bg-[#fdfcfb] dark:bg-[#070d19] rounded-xl text-xs text-slate-700 dark:text-slate-350 focus:outline-none focus:border-blue-500"
               >
                 {sectors.map(sec => (
                   <option key={sec} value={sec}>{sec === 'All' ? 'All Industries' : sec}</option>
@@ -199,11 +199,11 @@ export default function PlacementsTab({ placements, programs }: PlacementsTabPro
         </div>
 
         {/* Directory records layout */}
-        <div className="bg-[#fdfcfb] dark:bg-[#031a14] border border-[#0b3b2c]/10 dark:border-emerald-800/15 rounded-2xl overflow-hidden shadow-xs">
+        <div className="bg-[#fdfcfb] dark:bg-[#0a1220]/75 border border-[#0a2540]/10 dark:border-blue-900/15 rounded-2xl overflow-hidden shadow-xs">
           <div className="overflow-x-auto">
             <table className="w-full text-left border-collapse">
               <thead>
-                <tr className="border-b border-[#0b3b2c]/10 dark:border-emerald-800/15 bg-slate-50/50 dark:bg-slate-950/20 text-[10px] font-bold text-slate-400 uppercase tracking-wider font-mono">
+                <tr className="border-b border-[#0a2540]/10 dark:border-blue-900/15 bg-slate-50/50 dark:bg-slate-950/20 text-[10px] font-bold text-slate-400 uppercase tracking-wider font-mono">
                   <th className="p-4 pl-6">Scholar Name</th>
                   <th className="p-4">Target Company</th>
                   <th className="p-4">Industrial Sector</th>
@@ -211,17 +211,17 @@ export default function PlacementsTab({ placements, programs }: PlacementsTabPro
                   <th className="p-4 text-right pr-6">Salary Package</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-slate-50 dark:divide-emerald-800/10">
+              <tbody className="divide-y divide-slate-50 dark:divide-blue-900/10">
                 {filteredPlacements.length > 0 ? (
                   filteredPlacements.map((record) => {
                     const progName = programs.find(p => p.id === record.programId)?.title || 'B.Tech CS';
                     return (
-                      <tr key={record.id} className="text-xs hover:bg-[#0b3b2c]/5 dark:hover:bg-emerald-950/10 transition-colors">
+                      <tr key={record.id} className="text-xs hover:bg-[#0a2540]/5 dark:hover:bg-blue-950/10 transition-colors">
                         <td className="p-4 pl-6 font-semibold text-slate-800 dark:text-slate-100">
                           {record.studentName}
                         </td>
                         <td className="p-4">
-                          <span className="inline-flex items-center gap-1.5 py-1 px-2.5 bg-[#0b3b2c]/5 dark:bg-[#0b3b2c]/20 font-semibold text-[#0b3b2c] dark:text-[#a7f3d0] rounded-lg">
+                          <span className="inline-flex items-center gap-1.5 py-1 px-2.5 bg-[#0a2540]/5 dark:bg-[#0a2540]/20 font-semibold text-[#0a2540] dark:text-sky-205 rounded-lg">
                             <Briefcase className="w-3.5 h-3.5 text-slate-400" />
                             <span>{record.company}</span>
                           </span>

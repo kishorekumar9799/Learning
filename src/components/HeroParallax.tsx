@@ -44,7 +44,7 @@ export default function HeroParallax({ onExplorePrograms, onApplyNow }: HeroPara
 
   return (
     <section 
-      className="relative w-full h-[620px] md:h-[680px] bg-[#02130e] text-white overflow-hidden flex items-center justify-center select-none"
+      className="relative w-full h-[620px] md:h-[680px] bg-[#070d19] text-white overflow-hidden flex items-center justify-center select-none"
       id="hero-parallax-section"
     >
       {/* Background Layer 1: Sky & Atmosphere (slowest movement) */}
@@ -57,8 +57,8 @@ export default function HeroParallax({ onExplorePrograms, onApplyNow }: HeroPara
         }}
       />
 
-      {/* Atmospheric Forest Emerald & Amber Gradient Layer */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#02130e]/95 via-[#0b3b2c]/90 to-[#0c4a35]/65 z-1" />
+      {/* Atmospheric Royal Blue Navy & Amber Gradient Layer */}
+      <div className="absolute inset-0 bg-gradient-to-r from-[#070d19]/95 via-[#0a2540]/90 to-[#1e3a8a]/65 z-1" />
 
       {/* Background Accent Particles */}
       <div className="absolute inset-0 pointer-events-none z-2 overflow-hidden opacity-40">
@@ -81,7 +81,7 @@ export default function HeroParallax({ onExplorePrograms, onApplyNow }: HeroPara
           className="inline-flex items-center gap-2 px-3.5 py-1.5 mb-6 bg-white/10 backdrop-blur-md rounded-full border border-white/20 shadow-lg text-sm"
         >
           <Sparkles className="w-4 h-4 text-amber-400 fill-amber-400" />
-          <span className="font-semibold font-mono tracking-wider text-xs text-emerald-100 uppercase">
+          <span className="font-semibold font-mono tracking-wider text-xs text-sky-100 uppercase">
             Established 1894 • Academic Heritage
           </span>
         </motion.div>
@@ -93,7 +93,7 @@ export default function HeroParallax({ onExplorePrograms, onApplyNow }: HeroPara
           className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold mb-6 select-none max-w-3xl leading-tight text-white drop-shadow-lg"
         >
           Shaping the Future <br/>
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-200 to-emerald-50 font-serif">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-200 to-sky-100 font-serif">
             Through Timeless Institution
           </span>
         </motion.h1>
@@ -102,7 +102,7 @@ export default function HeroParallax({ onExplorePrograms, onApplyNow }: HeroPara
           initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="text-base sm:text-lg md:text-xl text-emerald-50/90 max-w-2xl font-sans font-light leading-relaxed mb-10 text-center md:text-left text-shadow-sm"
+          className="text-base sm:text-lg md:text-xl text-sky-50/95 max-w-2xl font-sans font-light leading-relaxed mb-10 text-center md:text-left text-shadow-sm"
         >
           A premier global institution dedicated to scholarly rigor, innovative physical engineering research, and cultivating outstanding critical thinkers.
         </motion.p>
@@ -132,7 +132,7 @@ export default function HeroParallax({ onExplorePrograms, onApplyNow }: HeroPara
       </div>
 
       {/* Dynamic diagonal divider overlay */}
-      <div className="absolute bottom-0 left-0 right-0 h-12 bg-[#fbfaf7] dark:bg-[#02130e]" style={{ clipPath: 'polygon(0 100%, 100% 100%, 100% 0)' }} />
+      <div className="absolute bottom-0 left-0 right-0 h-12 bg-[#f4f7fa] dark:bg-[#070d19]" style={{ clipPath: 'polygon(0 100%, 100% 100%, 100% 0)' }} />
     </section>
   );
 }

@@ -85,20 +85,20 @@ export default function AdminTab({ applications, programs, onStatusChange, onDel
     <div className="space-y-10 py-8 select-none">
       
       {/* Banner / Admin Credentials info */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 p-6 bg-[#031d16] border border-emerald-950/45 rounded-2xl text-white">
+      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 p-6 bg-[#06152d] border border-blue-950/45 rounded-2xl text-white">
         <div className="space-y-1">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-red-500/20 text-red-400 text-xs font-mono font-bold tracking-wider">
             <ShieldCheck className="w-4 h-4 animation-pulse" />
             <span>Verifying Admin Credentials</span>
           </div>
-          <h2 className="font-serif text-2xl font-bold font-serif text-[#fbfaf7]">Registries Board Admission Console</h2>
+          <h2 className="font-serif text-2xl font-bold font-serif text-[#f4f7fa]">Registries Board Admission Console</h2>
           <p className="text-xs text-slate-400 font-sans">
             Oversee, filter, authenticate, and process active student application files.
           </p>
         </div>
 
-        <div className="flex items-center gap-2 bg-emerald-900/30 p-3 rounded-xl border border-emerald-800/30 shrink-0 font-mono text-xs">
-          <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+        <div className="flex items-center gap-2 bg-blue-900/30 p-3 rounded-xl border border-blue-800/30 shrink-0 font-mono text-xs">
+          <div className="w-2 h-2 rounded-full bg-blue-500 animate-pulse" />
           <span className="text-slate-300">Live Server sync active</span>
         </div>
       </div>
@@ -107,28 +107,28 @@ export default function AdminTab({ applications, programs, onStatusChange, onDel
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
         
         {/* Total Submitted metric */}
-        <div className="p-5 bg-[#fdfcfb] dark:bg-[#031a14] border border-[#0b3b2c]/10 dark:border-emerald-800/20 rounded-xl shadow-xs">
+        <div className="p-5 bg-[#fdfcfb] dark:bg-[#0a1220]/75 border border-[#0a2540]/10 dark:border-blue-900/20 rounded-xl shadow-xs">
           <div className="text-xs font-semibold text-slate-400 font-mono uppercase tracking-wide">Total Applications</div>
-          <div className="text-3xl font-bold text-[#0b3b2c] dark:text-white mt-1.5 font-mono">{totalApps}</div>
+          <div className="text-3xl font-bold text-[#0a2540] dark:text-white mt-1.5 font-mono">{totalApps}</div>
           <div className="text-[10px] text-slate-400 mt-1 font-mono">Durable document register</div>
         </div>
 
         {/* Pending review required */}
-        <div className="p-5 bg-[#fdfcfb] dark:bg-[#031a14] border border-[#0b3b2c]/10 dark:border-emerald-800/20 rounded-xl shadow-xs">
+        <div className="p-5 bg-[#fdfcfb] dark:bg-[#0a1220]/75 border border-[#0a2540]/10 dark:border-blue-900/20 rounded-xl shadow-xs">
           <div className="text-xs font-semibold text-slate-400 font-mono uppercase tracking-wide">Pending Action</div>
           <div className="text-3xl font-bold mt-1.5 font-mono text-[#b45309] dark:text-amber-400">{pendingCount}</div>
           <div className="text-[10px] text-slate-400 mt-1 font-mono">Requires decision processing</div>
         </div>
 
         {/* Accepted admitted */}
-        <div className="p-5 bg-[#fdfcfb] dark:bg-[#031a14] border border-[#0b3b2c]/10 dark:border-emerald-800/20 rounded-xl shadow-xs">
+        <div className="p-5 bg-[#fdfcfb] dark:bg-[#0a1220]/75 border border-[#0a2540]/10 dark:border-blue-900/20 rounded-xl shadow-xs">
           <div className="text-xs font-semibold text-slate-400 font-mono uppercase tracking-wide">Accepted Scholar Entries</div>
-          <div className="text-3xl font-bold mt-1.5 font-mono text-emerald-600 dark:text-emerald-400">{acceptedCount}</div>
+          <div className="text-3xl font-bold mt-1.5 font-mono text-sky-600 dark:text-sky-400">{acceptedCount}</div>
           <div className="text-[10px] text-slate-400 mt-1 font-mono">Admitted orientation scheduled</div>
         </div>
 
         {/* average gpa applicant pool coefficient */}
-        <div className="p-5 bg-[#fdfcfb] dark:bg-[#031a14] border border-[#0b3b2c]/10 dark:border-emerald-800/20 rounded-xl shadow-xs">
+        <div className="p-5 bg-[#fdfcfb] dark:bg-[#0a1220]/75 border border-[#0a2540]/10 dark:border-blue-900/20 rounded-xl shadow-xs">
           <div className="text-xs font-semibold text-slate-400 font-mono uppercase tracking-wide">Avg Applicant GPA</div>
           <div className="text-3xl font-bold mt-1.5 font-mono text-[#b45309] dark:text-amber-400">{averageGpa}</div>
           <div className="text-[10px] text-slate-400 mt-1 font-mono">Weighted pool parameter</div>
@@ -142,15 +142,15 @@ export default function AdminTab({ applications, programs, onStatusChange, onDel
           <h3 className="font-serif text-xl font-bold text-slate-900 dark:text-white">Active Registrations Grid</h3>
           
           {/* Status filters buttons */}
-          <div className="flex flex-wrap gap-1.5 bg-emerald-55/10 dark:bg-[#031d16] p-1.5 rounded-xl border border-[#0b3b2c]/10 dark:border-emerald-800/15">
+          <div className="flex flex-wrap gap-1.5 bg-blue-50/10 dark:bg-[#070d19] p-1.5 rounded-xl border border-[#0a2540]/10 dark:border-blue-900/15">
             {statusOptions.map(st => (
               <button
                 key={st}
                 onClick={() => setFilterStatus(st)}
                 className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-colors cursor-pointer ${
                   filterStatus === st 
-                    ? 'bg-[#0b3b2c] text-[#fbfaf7] dark:bg-amber-500 dark:text-slate-950 font-bold shadow-xs' 
-                    : 'text-slate-500 hover:text-[#0b3b2c] dark:hover:text-emerald-400'
+                    ? 'bg-[#0a2540] text-[#f4f7fa] dark:bg-amber-500 dark:text-slate-950 font-bold shadow-xs' 
+                    : 'text-slate-500 hover:text-[#0a2540] dark:hover:text-sky-400'
                 }`}
               >
                 {st}
@@ -169,20 +169,20 @@ export default function AdminTab({ applications, programs, onStatusChange, onDel
               const statusStyleMap = {
                 Pending: 'bg-yellow-50 text-[#b45309] border-yellow-105 dark:bg-yellow-950/20 dark:text-yellow-400',
                 Reviewing: 'bg-blue-50 text-blue-750 border-blue-150 dark:bg-blue-950/20 dark:text-blue-400',
-                Accepted: 'bg-emerald-50 text-emerald-750 border-emerald-150 dark:bg-teal-950/20 dark:text-[#a7f3d0]',
+                Accepted: 'bg-sky-50 text-sky-750 border-sky-150 dark:bg-blue-950/20 dark:text-sky-305',
                 Declined: 'bg-rose-50 text-rose-755 border-rose-150 dark:bg-rose-950/20 dark:text-rose-400'
               };
 
               return (
                 <div 
                   key={app.id}
-                  className="p-6 bg-[#fdfcfb] dark:bg-[#031d16]/45 border border-[#0b3b2c]/10 dark:border-emerald-850/30 rounded-2xl shadow-sm space-y-4 hover:border-[#0b3b2c]/15 dark:hover:border-emerald-700 transition-[#0b3b2c] duration-300"
+                  className="p-6 bg-[#fdfcfb] dark:bg-[#070d19]/45 border border-[#0a2540]/10 dark:border-blue-950/30 rounded-2xl shadow-sm space-y-4 hover:border-[#0a2540]/15 dark:hover:border-blue-700 transition-[#0a2540] duration-300"
                 >
                   {/* Top line detail */}
-                  <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-3 border-b border-[#0b3b2c]/10 dark:border-emerald-800/15">
+                  <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-3 border-b border-[#0a2540]/10 dark:border-blue-900/15">
                     <div className="space-y-1">
                       <div className="flex items-center gap-2.5">
-                        <span className="font-serif font-bold text-lg text-[#0b3b2c] dark:text-slate-100">{app.fullName}</span>
+                        <span className="font-serif font-bold text-lg text-[#0a2540] dark:text-slate-100">{app.fullName}</span>
                         <span className={`px-2.5 py-0.5 rounded-full border text-[10px] font-mono font-bold uppercase tracking-wider ${statusStyleMap[app.status]}`}>
                           {app.status}
                         </span>
@@ -218,7 +218,7 @@ export default function AdminTab({ applications, programs, onStatusChange, onDel
 
                   {/* Letter statement area */}
                   {app.statementOfPurpose && (
-                    <div className="p-3 bg-emerald-55/10 dark:bg-[#02130e]/40 border border-[#0b3b2c]/10 dark:border-emerald-800/10 rounded-xl text-xs text-slate-500 leading-relaxed font-sans">
+                    <div className="p-3 bg-blue-50/10 dark:bg-[#070d19]/40 border border-[#0a2540]/10 dark:border-blue-900/10 rounded-xl text-xs text-slate-500 leading-relaxed font-sans">
                       <strong className="block text-slate-600 dark:text-slate-350 mb-1 font-mono uppercase text-[9px] tracking-wide">Letter of Intent Statement:</strong>
                       "{app.statementOfPurpose}"
                     </div>
